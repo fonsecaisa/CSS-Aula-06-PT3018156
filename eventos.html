@@ -2,9 +2,39 @@
 <html>
 <head>
 
+  <style>
+    button {
+      background-color: limegreen;
+      color: white;
+      padding: 10px 940px;
+      border: none;
+      cursor: pointer;
+      margin: 10px;
+      width: 150px;
+    }
+
+    input[type="text"],
+     input[type="email"],
+     input[type="tel"],
+     textarea {
+       width: 90%; /* Define a largura da caixa como 90% da largura do container */
+       padding: 10px;
+       border: 1px solid #ccc;
+       margin-bottom: 10px;
+       box-sizing: border-box; /* Inclui padding e borda na largura total */
+     }
+     /* Estilos para a caixa de texto */
+     textarea {
+       height: 100px; /* Define a altura da caixa de texto */
+     }
+
+    
+  </style>
+  
 <meta charset="UTF-8">
 <title>Eventos - IFSP - Pirituba</title>
 <script src="js/disabling.js"></script>
+  <link rel="stylesheet" href="css/formularios.css">
 </head>
 <body>
 
@@ -20,10 +50,10 @@
 
       <body>
 
-
-  </header>
+      
   <h1>Inscreva-se</h1>
 
+        
         <form name="evento">
           <fieldset>
             Evento
@@ -57,7 +87,7 @@
               E-mail <input type="email" placeholder="Email" required>
             </div>
             <div>
-              Celular <input type="tel" placeholder="(00) 00000-0000" required> (99) 99999-9999
+              Celular <input type="tel" placeholder="(00) 00000-0000" required>
             </div>
 
             <fieldset>
@@ -81,8 +111,8 @@
             Perfil no Github <input type="url" placeholder="https://github.com/usuario" required>
           </fieldset>
 
-          <button type="submit" form="evento">Inscrever</button>
-          <input type="reset" value="Limpar" />
+          <button>Inscrever</button><br>  
+          <button type="reset">Limpar</button>
         </form>
         </body>
 
